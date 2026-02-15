@@ -1,0 +1,42 @@
+
+<h1>(ibasho.)</h1>
+<h3>新規投稿ページ</h3>
+
+<%= stylesheet_link_tag 'new', :media => "all" %>
+<%= form_for @tweet do |f| %>
+
+ <div class="field">
+    <%= f.label :スクール名 %>
+    <%= f.text_field :schoolmei , :size => 30 %>
+  </div> 
+
+  <div class="field">
+    <%= f.label :住所 %>
+    <%= f.text_field :jyusho , :size => 30  %>
+  </div>
+
+  <div class="post-container">
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :内容 %>
+    <%= f.text_field :naiyou , :size => 30 %>
+  </div> 
+
+
+  <%= f.select :category,
+  [["北海道", "hokkaido"],
+   ["東北", "tohoku"],
+   ["関東", "kanto"],
+   ["中部", "chubu"],
+   ["中国", "chugoku"],
+   ["四国", "shikoku"],
+   ["九州", "kyushu"]], include_blank: 'どの投稿？' %>
+   
+   <%= f.submit "投稿する" %>
+<% end %>
+
+<%= link_to "ホームへ", tweets_path %>

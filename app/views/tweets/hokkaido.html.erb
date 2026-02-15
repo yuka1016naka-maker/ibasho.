@@ -1,0 +1,22 @@
+<h1>北海道</h1>
+<div class="search-form">
+        <%= form_tag({controller:"tweets",action:"hokkaido"}, method: :get) do %>
+          <%= text_field_tag :search, nil, placeholder: "キーワードで検索" %>
+          <%= submit_tag '検索'  %>
+        <% end %>
+      </div>
+<% @tweets.each do |t| %>
+  <% if t.category == "hokkaido" %>  
+  
+  <p>スクール名:<%= t.schoolmei %></p>
+  <p>住所:<%= t.jyusho %></p>
+  <p>画像        
+        <% if t.image.attached? %>
+            <%= image_tag t.image, size: '250x200'%>
+        <% end %>
+
+  <%= link_to "詳細へ", tweet_path(t.id) %> 
+
+  <% end %>
+<% end %>
+

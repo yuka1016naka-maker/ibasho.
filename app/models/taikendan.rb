@@ -1,0 +1,2 @@
+class Taikendan < ApplicationRecord
+end

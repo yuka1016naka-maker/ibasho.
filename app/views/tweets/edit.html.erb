@@ -1,0 +1,23 @@
+<%= form_for @tweet do |f| %>
+  
+  <div class="field">
+    <%= f.label :スクール名 %>
+    <%= f.text_field :schoolmei , :size => 30 %>
+  </div> 
+  <div class="field">
+    <%= f.label :住所 %>
+    <%= f.text_field :jyusho , :size => 30 %>
+  </div> 
+  <div class="field">
+    <%= f.label :内容 %>
+    <%= f.text_field :naiyou , :size => 30 %>
+  </div> 
+
+    <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+
+  <%= f.submit "編集する" %>
+<% end %>

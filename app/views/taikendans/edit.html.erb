@@ -1,0 +1,12 @@
+<%= form_for @taikendan do |f| %>
+  <%= f.label :年代 %>
+ <%= f.select :nendai, options_for_select([["10代", "jyu"], ["20代", "nijyu"], ["30代", "sanjyu"], ["40代", "yonjyu"], ["50代", "gojyu"],["60代以上", "rokujyu"]]) %> <br>
+
+
+   <%= f.label :タイトル %>
+  <%= f.text_field :title, :size => 140 %> <br>
+
+   <%= f.label :内容 %>
+  <%= f.text_field :body, :size => 140 %> 
+  <%= f.submit "編集する" %>
+<% end %>

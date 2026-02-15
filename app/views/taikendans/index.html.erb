@@ -1,0 +1,16 @@
+<%= link_to '新規投稿へ', :controller => "taikendans", :action => "new" %>
+<h3>体験談一覧</h3>
+ <%= link_to "ホーム", tweets_path %>
+<div class="taikendans-container">
+  <% @taikendans.each do |t| %>
+    <div class="taikendan">
+     年代 <%= t.nendai %><br>
+     タイトル <%= t.title %><br>
+     <%= t.body %>
+      <%= t.created_at.to_date %>
+      <%= link_to "詳細へ", taikendan_path(t.id) %> 
+    </div>
+    <%= link_to "編集する", edit_taikendan_path(t.id) %>
+    <%= button_to "削除する", taikendan_path(t.id), method: :delete %>  
+  <% end %>
+</div>

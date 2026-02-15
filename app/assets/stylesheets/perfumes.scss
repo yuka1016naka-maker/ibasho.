@@ -1,0 +1,90 @@
+/* ===== 診断フォーム ===== */
+.perfume-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.perfume-container p {
+  font-weight: 600;
+  margin: 30px 0 12px;
+}
+
+.perfume-container label {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.sindanbotan {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sindanbotan input {
+  padding: 12px 32px;
+  border-radius: 999px;
+  background: #5fa6c9;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+.diagnosis-page {
+  background: #f2f8fc;
+  padding: 60px 20px;
+}
+
+.diagnosis-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.diagnosis-header h5 {
+  color: #5fa6c9;
+  font-size: 20px;
+}
+
+.diagnosis-header p {
+  color: #6b6b6b;
+}
+
+.diagnosis-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+}
+
+.diagnosis-card h6 {
+  color: #4fa3c7;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.diagnosis-card p {
+  color: #4a4a4a;
+  line-height: 1.8;
+}
+
+.diagnosis-card .lead {
+  font-weight: 600;
+}
+
+.note {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #777;
+}
+
+.btn-home {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: #b9e0f2;
+  color: #333;
+  border-radius: 999px;
+  text-decoration: none;
+}

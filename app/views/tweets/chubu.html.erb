@@ -1,0 +1,19 @@
+<h1>中部</h1>
+<% @tweets.each do |t| %>
+  <% if t.category == "chubu" %>  
+ 
+  <p>スクール名:<%= t.schoolmei %></p>
+  <p>住所:<%= t.jyusho %></p>
+  <p>画像:        <% if t.image.attached? %>
+            <%= image_tag t.image, size: '250x200'%>
+        <% end %></p>
+
+  <% end %>
+<% end %>
+
+<div class="search-form">
+        <%= form_tag({controller:"tweets",action:"chubu"}, method: :get) do %>
+          <%= text_field_tag :search, nil, placeholder: "キーワードで検索" %>
+          <%= submit_tag '検索'  %>
+        <% end %>
+      </div>

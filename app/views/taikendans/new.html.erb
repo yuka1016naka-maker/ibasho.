@@ -1,0 +1,20 @@
+<h3>体験談</h3>
+<%= form_for @taikendans do |f| %>
+  <div class="field">
+    <%= f.label :年代 %>
+    <%= f.select :nendai, options_for_select([["10代", "jyu"], ["20代", "nijyu"], ["30代", "sanjyu"], ["40代", "yonjyu"], ["50代", "gojyu"],["60代以上", "rokujyu"]]) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :タイトル %>
+    <%= f.text_field :title, :size => 140 %>
+  </div>
+
+    <div class="field">
+    <%= f.label :内容 %>
+    <%= f.text_field :body, :size => 140 %>
+  </div>
+
+  <%= f.submit "投稿する" %>
+<% end %>
+<%= link_to "一覧に戻る", taikendans_path %>

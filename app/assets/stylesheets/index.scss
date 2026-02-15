@@ -1,0 +1,404 @@
+/* セクション見出し 共通 */
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* =========================================
+   全体の詳細設定
+   ========================================= */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  color: #333;
+  background-color: #fdfcf9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center; /* 中身を中央寄せ */
+}
+
+/* =========================================
+   ヘッダー
+   ========================================= */
+.main-header {
+  background-color: #e5e0d0;
+  padding: 15px 0;
+  border-radius: 0 0 20px 20px;
+  
+  .header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #444;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    &:hover {
+      color: #888;
+    }
+  }
+}
+
+/* =========================================
+   ヒーローセクション
+   ========================================= */
+.top-hero {
+  text-align: center;
+  padding: 75px 20px;
+
+  .en-copy {
+    font-size: 0.9rem;
+    color: #666666d0;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    letter-spacing: 0.05em;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+}
+
+/* =========================================
+   コンセプト
+   ========================================= */
+.site-concept {
+  margin: 50px auto 60px;
+  max-width: 700px;
+  text-align: center;
+  line-height: 2;
+  color: #333;
+
+  .concept-title {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    display: inline-block;
+    background: linear-gradient(transparent 70%, #fff9c4 70%);
+    font-weight: bold;
+  }
+
+  .concept-body p {
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+  }
+}
+
+/* =========================================
+   居場所を探す（ボタン）
+   ========================================= */
+.region-search {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .region-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+
+    .btn-region {
+      background: #fff;
+      border: 1px solid #e5e0d0;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: #666;
+      transition: 0.3s;
+      &:hover {
+        background: #e5e0d0;
+        color: #333;
+      }
+    }
+  }
+}
+
+
+/* セクション全体の背景と余白 */
+.system-search {
+  background-color: #f9fbfd; /* 柔らかな薄い青系 */
+  padding: 60px 20px;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.system-search h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* タイトルの下の装飾線 */
+.system-search h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #888; /* アクセントカラー */
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* グリッドレイアウト（レスポンシブ対応） */
+.system-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* カード（枠組み）のスタイル */
+.system-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.system-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* カード内の見出し */
+.system-card h4 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #000000;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* カード内の説明文 */
+.system-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 25px;
+  flex-grow: 1; /* ボタンの位置を揃える */
+}
+
+/* ボタンのスタイル */
+.btn-sub {
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  color: #888;
+  border: 2px solid #888;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-sub:hover {
+  background-color: #888;
+  color: #fff;
+}
+
+
+
+
+/* 診断ボタンのデザイン（SCSSの末尾に追加） */
+.btn-diagnosis {
+  display: inline-block;
+  background-color: #d6d854; 
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  /* マウスを乗せたときのアクション */
+  &:hover {
+    background-color: #9a9c39; /* 少し濃いオレンジに */
+    transform: translateY(-2px); /* 少し浮き上がる */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    color: white; /* 文字色は白をキープ */
+  }
+}
+/* =========================================
+   体験談セクション（個別設定が必要な場合）
+   ========================================= */
+.experience-section {
+  padding: 50px 0;
+  background-color: #f9f9f9; /* 例えば背景色を変えるなど */
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* 体験談セクション内のボタン配置設定 */
+.tweets-more-container {
+  text-align: center; // ボタンを中央寄せ
+  margin-top: 40px;   // 体験談コンテンツとの間に余白を作る
+  margin-bottom: 20px;
+
+  /* 診断ボタンと同じクラスをそのまま使う場合、
+     ここに追加の微調整（幅の指定など）が必要なら書く */
+  .btn-diagnosis {
+    min-width: 140px; // ボタンの横幅を確保して存在感を出す
+  }
+}
+/* 体験談のリード文をセンターに揃える */
+.section-desc {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* =========================================
+   コラムセクション（個別設定が必要な場合）
+   ========================================= */
+.column-section {
+  padding: 50px 0;
+}
+
+.column-grid {
+  display: grid;
+  /* コラムは2列にしたい、などの変更がここで可能になります */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+/* =========================================
+   スマホ対応
+   ========================================= */
+@media (max-width: 768px) {
+  .top-hero h2 {
+    font-size: 1.5rem;
+  }
+  .concept-title {
+    font-size: 1.2rem;
+  }
+  .concept-body p {
+    font-size: 0.95rem;
+    padding: 0 15px;
+  }
+}
+
+
+.column-section {
+  padding: 48px 0;
+  background-color: #fafafa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.column-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+/* カテゴリブロック */
+.column-category-block {
+  margin-bottom: 48px;
+}
+
+.column-category-title {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+
+.column-category-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+/* カード */
+.column-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.column-card {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.column-title {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.column-link {
+  font-size: 0.85rem;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.column-link:hover {
+  text-decoration: underline;
+}
+
+/* 補足文 */
+.column-optional {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 10px;
+}

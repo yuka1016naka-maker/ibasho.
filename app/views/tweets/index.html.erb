@@ -1,0 +1,225 @@
+<header class="main-header">
+  <div class="header-inner">
+    <div class="logo">
+        <h1 style="margin: 0; font-size: 24px;">ibasho.</h1>
+    </div>
+    <nav class="nav-links">
+      <%= link_to "ホーム", tweets_path %>
+      <%= link_to "居場所を探す", "#region-search" %>
+      <%= link_to "制度・サポートを知る", "#system-search" %>
+      <%= link_to "体験談", "#tweets-section" %>
+      <%= link_to "コラム", "#column-section" %>
+      <%= link_to "診断", "#diagnosis-section" %>
+   <%= link_to "新規投稿", new_tweet_path %>
+   <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+    </nav>
+  </div>
+  
+</header>
+
+<main>
+  <section class="top-hero">
+    <div class="hero-text">
+      <p class="en-copy">Find your "ibasho" — a place of peace, free from judgment.</p>
+      <h2>誰にも否定されない、<br>ほっとできる居場所を。</h2>
+
+    <div class="site-concept">
+      <h3 class="concept-title">みんなでつくる、心の拠点「<span>ibasho.</span>」</h3>
+      
+      <div class="concept-body">
+        <p>ここは、学校以外の選択肢が<br>
+        もっと自由に、もっとポジティブに<br>
+        選べる社会を目指すサイトです。</p>
+
+        <p>全国のフリースクールや通信制高校の情報をはじめ、<br>
+        同じ道を歩んできた先輩たちのリアルな体験談、<br>
+        そして「これから」を考えるヒントになる学校診断など、<br>
+        あなたの「知りたい」と「安心」を形にするお手伝いをします。</p>
+
+        <p>ここは、誰もあなたを否定しない場所。<br>
+        まずはここで、ゆっくり深呼吸してみませんか。</p>
+      </div>
+    </div>
+    </div>
+</section> 
+
+ <section class="region-search" id="region-search">
+    <div class="container">
+      <h3 class="section-title">居場所を探す</h3>
+      <div class="region-links">
+        <%= link_to '北海道', tweets_hokkaido_path, class: "btn-region" %>
+        <%= link_to '東北', tweets_tohoku_path, class: "btn-region" %>
+        <%= link_to '関東', tweets_kanto_path, class: "btn-region" %>
+       <%= link_to '中部', tweets_chubu_path, class: "btn-region" %>
+        <%= link_to '近畿', tweets_kinki_path, class: "btn-region" %>
+        <%= link_to '中国', tweets_chugoku_path, class: "btn-region" %>
+        <%= link_to '四国', tweets_shikoku_path, class: "btn-region" %>
+        <%= link_to '九州', tweets_kyushu_path, class: "btn-region" %>
+        </div>
+    </div>
+  </section>
+
+  <section class="system-search" id="system-search">
+  <div class="container">
+    <h3 class="section-title">制度・サポートを知る</h3>
+    <div class="system-grid">
+      <div class="system-card">
+        <h4>お金のサポート</h4>
+        <p>就学支援金や塾代助成カードなど、教育費の負担を減らす制度について解説します。</p>
+        <%= link_to "詳しく見る", money_support_path, class: "btn-sub" %>
+      </div>
+      
+      <div class="system-card">
+        <h4>出席扱いの制度</h4>
+        <p>学校に行かなくても「出席」として認められるための条件や手続きをまとめました。</p>
+        <%= link_to "詳しく見る", supports_attendance_path, class: "btn-sub" %>
+      </div>
+      
+      <div class="system-card">
+        <h4>相談窓口を探す</h4>
+        <p>教育支援センター（適応指導教室）や、無料で相談できる公的な窓口を探せます。</p>
+        <%= link_to "詳しく見る", supports_consultation_path, class: "btn-sub" %>
+      </div>
+
+      <div class="system-card">
+        <h4>学習のヒント・教材</h4>
+        <p>映像授業や無料で使える学習プリントなど、家での学びを支える便利なツールを紹介します。</p>
+        <%= link_to "詳しく見る", supports_study_path, class: "btn-sub" %>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="tweets-section" id="tweets-section">
+    <div class="container">
+      <h3 class="section-title", style="margin-bottom: 20px">体験談</h3>
+      <p>不登校を経験した人たちの、リアルな体験を集めました。
+      <p>「当時つらかったこと」「やってよかったこと」「今だから言えること」。</p>
+      <p>  正解は一つじゃないけれど、</p>
+      <p>  今のあなたが少し楽になるヒントが、ここにあるかもしれません。</p>
+        </div>
+     <div class="tweets-more-container">
+     <%= link_to '体験談をみる', {:controller => "taikendans", :action => "index"},  class: "btn-diagnosis" %>
+    </div>
+  </section>
+</main>
+
+
+<section class="diagnosis-section" style="background-color: #f9f9f9; padding: 40px 0; text-align: center;" id="diagnosis-section">
+    <div class="container">
+      <h3 class="section-title", style="margin-bottom: 20px;">あなたにぴったりの居場所を</h3>
+      <p>いくつかの質問に答えるだけで、おすすめの居場所を診断します！</p>
+      <%= link_to "診断をはじめる", new_perfume_path, class: "btn-diagnosis" %>
+    </div>
+  </section>
+
+
+
+
+  <section class="column-section" id="column-section">
+  <div class="container">
+    <h3 class="section-title">コラム</h3>
+    <p class="column-note">
+      ※外部サイトの記事を紹介しています。<br>
+      今の気持ちに近いものから、無理のないペースで読んでみてください。
+    </p>
+
+    <!-- 進路・学びに迷っているとき -->
+    <div class="column-category-block">
+      <h4 class="column-category-title">進路・学びに迷っているとき</h4>
+      <p class="column-category-desc">
+        学校以外の選択肢を知りたいときにおすすめの記事
+      </p>
+
+      <div class="column-grid">
+        <div class="column-card">
+          <p class="column-title">
+            フリースクールと通信制高校の違いとは？
+          </p>
+          <%= link_to "詳しく読む",
+              "https://www.shingaku-fs.jp/tsunaguba/column/re_school/tushinkoukou-freeschool",
+              class: "column-link",
+              target: "_blank",
+              rel: "noopener" %>
+        </div>
+      </div>
+    </div>
+
+    <!-- 心がしんどいとき -->
+    <div class="column-category-block">
+      <h4 class="column-category-title">心がしんどいとき</h4>
+      <p class="column-category-desc">
+        自分を責めてしまいそうなときに、そっと読んでほしい記事
+      </p>
+
+      <div class="column-grid">
+        <div class="column-card">
+          <p class="column-title">
+            自分を責めてしまいそうな時に読んでほしいこと
+          </p>
+          <%= link_to "詳しく読む",
+              "https://new-schoooool.jp/hutoukou-hogosya/",
+              class: "column-link",
+              target: "_blank",
+              rel: "noopener" %>
+        </div>
+
+        <div class="column-card">
+          <p class="column-title">
+            子どもを責めてしまいそうなときに（保護者向け）
+          </p>
+          <%= link_to "詳しく読む",
+              "https://gakuin.gakken.jp/column/detail/49",
+              class: "column-link",
+              target: "_blank",
+              rel: "noopener" %>
+        </div>
+
+        <div class="column-card">
+          <p class="column-title">
+            「このままでいいのかな」と思ったときに
+          </p>
+          <%= link_to "詳しく読む",
+              "https://note.com/famous_coyote812/n/n9264a458c104",
+              class: "column-link",
+              target: "_blank",
+              rel: "noopener" %>
+        </div>
+      </div>
+
+
+
+    <!-- 不登校から広がる選択肢 -->
+    <div class="column-category-block">
+      <h4 class="column-category-title">不登校から、その先の選択肢を考えたいとき</h4>
+      <p class="column-category-desc">
+        「今とは違う環境」を考えてみたいときのヒント
+      </p>
+
+      <div class="column-grid">
+        <div class="column-card">
+          <p class="column-title">
+            不登校から海外留学という選択
+          </p>
+          <%= link_to "詳しく読む",
+              "https://www.wso-centre.com/",
+              class: "column-link",
+              target: "_blank",
+              rel: "noopener" %>
+        </div>
+
+        <div class="column-card">
+          <p class="column-title">
+            海外という選択肢を知る
+          </p>
+          <%= link_to "詳しく読む",
+              "https://tp-ryugaku.com/",
+              class: "column-link",
+              target: "_blank",
+              rel: "noopener" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

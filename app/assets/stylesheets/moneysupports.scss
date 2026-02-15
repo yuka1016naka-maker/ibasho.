@@ -1,0 +1,378 @@
+/* =========================================
+   お金のサポート詳細ページ（写真再現・完成版）
+   ========================================= */
+
+.money-support-page {
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.7;
+  padding-bottom: 80px;
+}
+
+/* 共通コンテナ */
+.money-support-page .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===============================
+   ヘッダー
+   =============================== */
+.support-detail-header {
+  text-align: center;
+  padding: 70px 0 30px;
+}
+
+.support-detail-header .sub-title {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.support-detail-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* ===============================
+   導入文
+   =============================== */
+.intro-message {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.intro-message p {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+
+.highlight-box {
+  background: #f3f3f3;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 680px;
+}
+
+/* ===============================
+   支援カード
+   =============================== */
+.support-card-detail {
+  background: #fff;
+  border-radius: 40px;
+  padding: 60px 40px;
+  margin-bottom: 80px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.04);
+}
+
+/* ---------- カード見出し ---------- */
+.card-header {
+  background: #8fa18e;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.card-header.color-2 {
+  background: #96a5b8;
+}
+
+.card-header .number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.card-header h2 {
+  font-size: 1.6rem;
+  margin: 0;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+.card-header h2 span {
+  font-size: 1.05rem;
+}
+
+/* ---------- 概要文 ---------- */
+.summary-text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+
+/* ===============================
+   図解パネル
+   =============================== */
+.visual-panel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.visual-panel {
+  position: relative;
+  border: 3px solid #8fa18e;
+  border-radius: 32px;
+  padding: 55px 26px 35px;
+  text-align: center;
+  background: #fff;
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.04),
+    0 3px 8px rgba(0,0,0,0.02);
+}
+
+.support-card-detail:nth-of-type(2) .visual-panel {
+  border-color: #96a5b8;
+}
+
+/* ---------- パネルラベル ---------- */
+.panel-label {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #8fa18e;
+  color: #fff;
+  padding: 6px 36px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.support-card-detail:nth-of-type(2) .panel-label {
+  background: #96a5b8;
+}
+
+/* ---------- リスト ---------- */
+.visual-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visual-panel ul li {
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.visual-panel ul li::before {
+  content: "✔";
+  margin-right: 8px;
+}
+
+/* ---------- 強調注記 ---------- */
+.important-note {
+  margin-top: 22px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* ===============================
+   グレーBOX
+   =============================== */
+.benefit-item,
+.example-box,
+.procedure-box {
+  background: #f2f2f2;
+  border-radius: 22px;
+  padding: 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.benefit-item .type,
+.example-box .city-name {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.benefit-item strong,
+.example-box strong {
+  font-size: 1.25rem;
+}
+
+/* ===============================
+   セクション帯
+   =============================== */
+.knowledge-section h3,
+.how-to-search h3,
+.final-message h3 {
+  background: #a8b5c7;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 1.35rem;
+  margin: 90px 0 40px;
+  letter-spacing: 0.1em;
+}
+
+/* ===============================
+   最後に
+   =============================== */
+.final-message {
+  text-align: center;
+}
+
+.final-message p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.back-home {
+  margin-top: 60px;
+}
+
+.back-home a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: underline;
+}
+
+/* ===============================
+   レスポンシブ
+   =============================== */
+@media (max-width: 768px) {
+  .visual-panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .support-card-detail {
+    padding: 50px 24px;
+  }
+
+  .support-detail-header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* ===============================
+   カラーテーマ定義
+   =============================== */
+:root {
+  --green-main: #8fa18e;
+  --blue-main:  #96a5b8;
+}
+
+/* ===============================
+   ① 国の制度（1枚目） → 緑
+   =============================== */
+.support-card-detail:nth-of-type(1) .card-header {
+  background: var(--green-main);
+}
+
+.support-card-detail:nth-of-type(1) .visual-panel {
+  border-color: var(--green-main);
+}
+
+.support-card-detail:nth-of-type(1) .panel-label {
+  background: var(--green-main);
+}
+
+/* ===============================
+   ② 自治体のサポート（2枚目） → 青
+   =============================== */
+.support-card-detail:nth-of-type(2) .card-header {
+  background: var(--blue-main);
+}
+
+.support-card-detail:nth-of-type(2) .visual-panel {
+  border-color: var(--blue-main);
+}
+
+.support-card-detail:nth-of-type(2) .panel-label {
+  background: var(--blue-main);
+}
+
+/* ===============================
+   知っておいてほしいこと
+   =============================== */
+.knowledge-section {
+  text-align: center;
+}
+
+.knowledge-section .knowledge-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 30px auto;
+  max-width: 640px;
+}
+
+.knowledge-section .k-item {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.knowledge-section .message-low {
+  max-width: 680px;
+  margin: 40px auto 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ===============================
+   どうやって調べればいい？
+   =============================== */
+.how-to-search {
+  text-align: center;
+}
+
+.how-to-search .phrase-box {
+  max-width: 720px;
+  margin: 0 auto 40px;
+}
+
+.how-to-search .phrase {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.how-to-search .contact-info {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.how-to-search h4 {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.how-to-search .hint {
+  margin-top: 20px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ===============================
+   スマホ微調整
+   =============================== */
+@media (max-width: 768px) {
+  .knowledge-section .k-item,
+  .how-to-search .phrase {
+    font-size: 1rem;
+  }
+}

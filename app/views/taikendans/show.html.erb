@@ -1,0 +1,11 @@
+<h3>体験談</h3>
+<div class="taikendan">
+  <p><%= @taikendan.nendai %></p>
+  <p><%= @taikendan.title %></p>
+  <p><%= @taikendan.body %></p>
+  <p><%= @taikendan.created_at.to_date %></p>
+</div>
+
+<%= link_to "体験談一覧に戻る", taikendans_path %>
+
+<%= link_to "編集する", edit_taikendan_path(@taikendan.id) %>
