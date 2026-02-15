@@ -46,16 +46,19 @@
  <section class="region-search" id="region-search">
     <div class="container">
       <h3 class="section-title">居場所を探す</h3>
-      <div class="region-links">
-        <%= link_to '北海道', tweets_hokkaido_path, class: "btn-region" %>
-        <%= link_to '東北', tweets_tohoku_path, class: "btn-region" %>
-        <%= link_to '関東', tweets_kanto_path, class: "btn-region" %>
-       <%= link_to '中部', tweets_chubu_path, class: "btn-region" %>
-        <%= link_to '近畿', tweets_kinki_path, class: "btn-region" %>
-        <%= link_to '中国', tweets_chugoku_path, class: "btn-region" %>
-        <%= link_to '四国', tweets_shikoku_path, class: "btn-region" %>
-        <%= link_to '九州', tweets_kyushu_path, class: "btn-region" %>
+      <div class="region-map-wrapper">
+        <%= image_tag "ken.png", class: "region-map" %>
+        <div class="region-links">
+          <%= link_to '北海道', tweets_hokkaido_path, class: "btn-region btn-hokkaido" %>
+          <%= link_to '東北', tweets_tohoku_path, class: "btn-region btn-tohoku" %>
+          <%= link_to '関東', tweets_kanto_path, class: "btn-region btn-kanto" %>
+          <%= link_to '中部', tweets_chubu_path, class: "btn-region btn-chubu" %>
+          <%= link_to '近畿', tweets_kinki_path, class: "btn-region btn-kinki" %>
+          <%= link_to '中国', tweets_chugoku_path, class: "btn-region btn-chugoku" %>
+          <%= link_to '四国', tweets_shikoku_path, class: "btn-region btn-shikoku" %>
+          <%= link_to '九州', tweets_kyushu_path, class: "btn-region btn-kyushu" %>
         </div>
+      </div>
     </div>
   </section>
 

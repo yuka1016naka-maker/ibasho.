@@ -34,11 +34,10 @@ body {
   
   .header-inner {
     max-width: 1000px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .nav-links a {
@@ -47,6 +46,7 @@ body {
     margin-left: 20px;
     font-size: 0.9rem;
     font-weight: bold;
+    padding: 2px;
     &:hover {
       color: #888;
     }
@@ -402,3 +402,41 @@ body {
   color: #999;
   margin-top: 10px;
 }
+.logo h1 {
+ margin-left: 20px;
+}
+
+.region-map-wrapper {
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.region-map {
+  width: 620px;
+  height: 500px;
+  height: auto;
+
+}
+
+.region-links {
+  position: absolute;
+  inset: 0;
+}
+
+/* 共通 */
+.btn-region {
+  position: absolute;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+/* 各地域の位置調整 */
+.btn-hokkaido { top: 15%; left: 65%; }
+.btn-tohoku   { top: 48%; left: 58%; }
+.btn-kanto    { top: 69%; left: 54%; }
+.btn-chubu    { top: 66%; left: 46%; }
+.btn-kinki    { top: 74%; left: 40%; }
+.btn-chugoku  { top: 61%; left: 29%; }
+.btn-shikoku  { top: 82%; left: 31%; }
+.btn-kyushu   { top: 68%; left: 20%; }
