@@ -62,7 +62,7 @@ group :production do
 end
 
 gem 'devise'
-gem 'cloudinary', '<2.0.0'
+gem 'cloudinary', '<3.0.0'
 gem 'activestorage-cloudinary-service'
 gem 'dotenv-rails'
 gem 'sassc', '~> 2.4'
